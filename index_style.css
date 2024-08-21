@@ -109,10 +109,6 @@
   }
 }
 
-html{
-    height: 100vh;
-}
-
 /* The animation code */
 @keyframes example {
     from {background-color: red;}
