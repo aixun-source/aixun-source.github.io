@@ -73,7 +73,7 @@
 /**/
 
 /* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
+.bgimg-1 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -86,122 +86,13 @@
   min-height: 100%;
 }
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url("/w3images/parallax2.jpg");
-  min-height: 400px;
-}
-
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url("/w3images/parallax3.jpg");
-  min-height: 400px;
-}
-
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
+  .bgimg-1 {
     background-attachment: scroll;
     min-height: 400px;
   }
-}
-
-/* The animation code */
-@keyframes example {
-    from {background-color: red;}
-    to {background-color: yellow;}
-}
-  
-/* The element to apply the animation to */
-.header {
-    width: 100%;
-    margin: 0;
-    height: 500px;
-    background-color: red;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-direction: alternate;
-    animation-iteration-count:infinite;
-    display: flex;
-}
-
-#welc{
-    animation-duration: 3s;
-    animation-name: slideup;
-    font-size: 50px;
-    margin: 0;
-    padding: 0;
-}
-
-#welcome{
-    animation-duration: 3s;
-    animation-name: slidedown;
-    font-size: 100px;
-    margin: 0;
-    padding: 0;
-}
-
-@keyframes slideup {
-    from {
-      margin-top: -100%;
-    }
-
-    to {
-      margin-top: 0%;
-    }
-}
-
-@keyframes slidedown {
-    from {
-      margin-top: 100%;
-    }
-
-    to {
-      margin-top: 0%;
-    }
-}
-
-.description{
-    font-size: 50px;
-    padding: 20px;
-    border: 3px solid red;
-    width: 480px;
-    opacity: 0;
-    display: none;
-}
-
-.description.fade-in{
-    display: block;
-    animation: fade-in 0.7s ease-in forwards;
-}
-
-.description.fade-out{
-    animation: fade-out 0.7s ease-out forwards;
-}
-
-@keyframes fade-in{
-    0%{
-        opacity: 0;
-        display: none;
-    }
-
-    100%{
-        opacity: 1;
-        display: block;
-    }
-}
-
-@keyframes fade-out{
-    0%{
-        opacity: 1;
-        display: block;
-    }
-    
-    100%{
-        opacity: 0;
-        display: none;
-    }
 }
