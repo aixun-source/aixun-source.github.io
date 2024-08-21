@@ -125,11 +125,15 @@ height: 100%;
 .footer { 
   background-color:burlywood;
   height: 100px;
-  bottom: 0;
 }
 
 .description-footer{
+  background-color: burlywood;
   margin-left: 100px;
   margin-right: 100px;
-  position: absolute;
+}
+
+.description-text-footer{
+  margin: auto;
+  background-color: burlywood;
 }
